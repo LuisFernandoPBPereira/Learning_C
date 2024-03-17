@@ -8,8 +8,10 @@
 <h2>O que aprendi?</h2>
 <ul>
  <li>Tipos primitivos</li>
+ <li>Tipos complexos</li>
  <li>Estrutura de Condição</li>
  <li>Estruturas de Repetição</li>
+ <li>Matriz</li>
  <li>Receber dados via console</li>
  <li>Printar informações com suas devidas formatações</li>
  <li>Ponteiros</li>
