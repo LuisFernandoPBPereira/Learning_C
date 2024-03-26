@@ -23,6 +23,8 @@
  <li>Passagem de valor</li>
  <li>Passagem de referência</li>
  <li>Diferença entre Classes e Struct</li>
+ <li>malloc() -> Alocação de memória</li>
+ <li>calloc() -> Alocação de memória sem lixo</li>
 </ul>
 
 <br/>
