@@ -25,6 +25,7 @@
  <li>Diferença entre Classes e Struct</li>
  <li>malloc() -> Alocação de memória</li>
  <li>calloc() -> Alocação de memória sem lixo</li>
+ <li>string.h</li>
 </ul>
 
 <br/>
