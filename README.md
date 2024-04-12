@@ -31,6 +31,7 @@
  <ul>
   <li>Pilha</li>
  </ul>
+ <li>Headers (Arquivos .h)</li>
 </ul>
 
 <br/>
