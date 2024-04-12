@@ -97,6 +97,7 @@ int main(void) {
         if(remover){
           printf("\nElemento removido:");
           imprimirPessoa(remover->pessoa);
+          free(remover);
         }
         else 
           printf("Nao ha dados para desempilhar\n");
