@@ -91,9 +91,18 @@ int expressaoBemFormada(char expressao[])
     else if(expressao[i] == ')' || expressao[i] == '}' || expressao[i] == ']')
     {
       remover = desempilhar(&pilha);
-      if(formaPar(expressao[i], remover->caracter) == 0) return 1;
-
-      free(remover);
+      
+      if(remover != NULL)
+      {
+        if(formaPar(expressao[i], remover->caracter) == 0) return 1;
+  
+        free(remover);
+      }
+      else
+      {
+        printf("Expressao mal formada\n");
+        return 0;
+      }
     }
     i++;
   }
@@ -118,6 +127,6 @@ int main()
   printf("Digite a expressao: ");
   scanf("%49[^\n]", expressao);
 
-  printf("Expressao: %s\nRetorno: %s", expressao, 
+  printf("Expressao: %s\nRetorno: %s", expressao,
     expressaoBemFormada(expressao) == 0 ? "falso" : "verdadeiro");
 }
