@@ -26,6 +26,11 @@
  <li>malloc() -> Alocação de memória</li>
  <li>calloc() -> Alocação de memória sem lixo</li>
  <li>string.h</li>
+ <li>stdbool.h</li>
+ <li>Estruturas de Dados Lineares:</li>
+ <ul>
+  <li>Pilha</li>
+ </ul>
 </ul>
 
 <br/>
