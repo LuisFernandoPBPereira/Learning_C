@@ -30,6 +30,7 @@
  <li>Estruturas de Dados Lineares:</li>
  <ul>
   <li>Pilha</li>
+  <li>Fila</li>
  </ul>
  <li>Headers (Arquivos .h)</li>
 </ul>
