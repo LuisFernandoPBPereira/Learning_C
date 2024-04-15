@@ -39,7 +39,7 @@
   <li><a href="https://github.com/LuisFernandoPBPereira/Learning_C/wiki/Pilha">Pilha</a></li>
   <li><a href="https://github.com/LuisFernandoPBPereira/Learning_C/wiki/Fila">Fila</a></li>
  </ul>
- <li>Headers (Arquivos .h)</li>
+ <li><a href="https://github.com/LuisFernandoPBPereira/Learning_C/wiki/Headers">Headers (Arquivos .h)</a></li>
 </ul>
 
 <br/>
