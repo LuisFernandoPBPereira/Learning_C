@@ -5,6 +5,13 @@
  contendo exercícios da plataforma Beecrowd e exercícios feitos através das matérias da faculdade.
 </p>
 
+<br/>
+
+<h2>Conceitos aprofundados:</h2>
+<a href="https://github.com/LuisFernandoPBPereira/Learning_C/wiki">Clique aqui para acessar a Wiki do repositório!</a>
+
+<br/><br/>
+
 <h2>O que aprendi?</h2>
 <ul>
  <li>Tipos primitivos</li>
@@ -29,8 +36,8 @@
  <li>stdbool.h</li>
  <li>Estruturas de Dados Lineares:</li>
  <ul>
-  <li>Pilha</li>
-  <li>Fila</li>
+  <li><a href="https://github.com/LuisFernandoPBPereira/Learning_C/wiki/Pilha">Pilha</a></li>
+  <li><a href="https://github.com/LuisFernandoPBPereira/Learning_C/wiki/Fila">Fila</a></li>
  </ul>
  <li>Headers (Arquivos .h)</li>
 </ul>
