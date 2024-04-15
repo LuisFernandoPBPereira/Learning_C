@@ -1,5 +1,18 @@
 #include <stdio.h>
 #include <stdlib.h>
+
+//   REPRESENTAÇÃO GRÁFICA DOS NÓS DA STRUCT
+
+/*
+  +-------+----------+      +-------+----------+      +-------+----------+
+  | valor | próximo  | ---> | valor | próximo  | ---> | valor | próximo  | ---> NULL
+  +-------+----------+      +-------+----------+      +-------+----------+
+  |   10  | 0x1000   |      |   20  | 0x2000   |      |   30  |   NULL   |
+  +-------+----------+      +-------+----------+      +-------+----------+
+    Nodo 1                 Nodo 2                   Nodo 3
+
+*/
+
 typedef struct no
 {
   int valor;
