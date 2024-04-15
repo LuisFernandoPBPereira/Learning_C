@@ -8,7 +8,7 @@
 <br/>
 
 <h2>Conceitos aprofundados:</h2>
-<a href="https://github.com/LuisFernandoPBPereira/Learning_C/wiki">Clique aqui para acessar a Wiki do repositório!</a>
+<a href="https://github.com/LuisFernandoPBPereira/Learning_C/wiki" target="_blank" rel="noreferrer noopener">Clique aqui para acessar a Wiki do repositório!</a>
 
 <br/><br/>
 
@@ -36,8 +36,9 @@
  <li>stdbool.h</li>
  <li>Estruturas de Dados Lineares:</li>
  <ul>
-  <li><a href="https://github.com/LuisFernandoPBPereira/Learning_C/wiki/Pilha">Pilha</a></li>
-  <li><a href="https://github.com/LuisFernandoPBPereira/Learning_C/wiki/Fila">Fila</a></li>
+  <li><a href="https://github.com/LuisFernandoPBPereira/Learning_C/wiki/Pilha" target="_blank" rel="noreferrer noopener">Pilha</a></li>
+  <li><a href="https://github.com/LuisFernandoPBPereira/Learning_C/wiki/Fila" target="_blank" rel="noreferrer noopener">Fila</a></li>
+  <li><a href="https://github.com/LuisFernandoPBPereira/Learning_C/wiki/Lista-Simplesmente-Encadeada" target="_blank" rel="noreferrer noopener">Lista Simplesmente Encadeada</a></li>
  </ul>
  <li><a href="https://github.com/LuisFernandoPBPereira/Learning_C/wiki/Headers">Headers (Arquivos .h)</a></li>
 </ul>
