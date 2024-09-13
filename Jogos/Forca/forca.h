@@ -1,0 +1,16 @@
+int TamanhoDaPalavra();
+void EscolhePalavra();
+void CriaTracosDaPalavra();
+void InsereTracos();
+void RecebeChute();
+int InsereChutesCorretos();
+void InsereChutesErrados();
+void ImprimePalavraSecreta();
+void ImprimeChutesCertos();
+void ImprimeChutesErrados();
+void ImprimeForca();
+void VerificaChute();
+int Ganhou();
+int Enforcou();
+void Executa();
+void CleanStdin();
