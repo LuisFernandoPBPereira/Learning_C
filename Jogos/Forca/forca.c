@@ -6,6 +6,7 @@
 #define MODO_DE_LEITURA "r"
 #define MAX_ERROS 6
 
+int modoDeJogo = 0;
 
 char palavra[26];
 char* tracosDaPalavra = NULL;
@@ -161,6 +162,17 @@ int Enforcou(){
   return 0;
 }
 
+void ModoDeJogo(){
+  printf("Escolha um modo de jogo:\n(1) - Palavra aleatória\n(2) - Palavra inserida\n");
+  scanf("%d", &modoDeJogo);
+  system("clear");
+}
+
+void InserePalavra(){
+  printf("Digite a palavra para ser adivinhada: ");
+  scanf("%s", palavra);
+}
+
 void ImprimeForca(){
   system("clear");
   
@@ -201,7 +213,15 @@ void ImprimeForca(){
 }
 
 void Executa(){
-  EscolhePalavra();
+  ModoDeJogo();
+
+  if(modoDeJogo == 1){
+    EscolhePalavra();
+  }
+  else{
+    InserePalavra();
+  }
+  
   CriaTracosDaPalavra();
   InsereTracos();
 
