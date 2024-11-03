@@ -2,8 +2,8 @@
 #include <stdlib.h>
 
 enum Sort{
-    ordemCrescente,
-    ordemDecrescente
+    ORDEM_CRESCENTE,
+    ORDEM_DECRESCENTE
 };
 
 void SelectionSort(int numeros[], int tamanho, int ordenacao);
@@ -38,14 +38,14 @@ void Menu(){
         printf("\nVetor a ser ordenado de forma crescente: ");
         ImprimeVetor(vetor, tamanho);
         printf("\n");
-        SelectionSort(vetor, tamanho, ordemCrescente);
+        SelectionSort(vetor, tamanho, ORDEM_CRESCENTE);
         break;
     case 2:
         InserirValores(vetor, tamanho);
         printf("\nVetor a ser ordenado de forma descrescente: ");
         ImprimeVetor(vetor, tamanho);
         printf("\n");
-        SelectionSort(vetor, tamanho, ordemDecrescente);
+        SelectionSort(vetor, tamanho, ORDEM_DECRESCENTE);
         break;
     case 3:
         exit(1);
@@ -73,8 +73,8 @@ void InserirValores(int numeros[], int tamanho){
 }
 
 void SelectionSort(int numeros[], int tamanho, int ordenacao){
-    if(ordenacao == ordemCrescente){
-        int numeroMinimo, auxiliar;
+    if(ordenacao == ORDEM_CRESCENTE){
+        int numeroMinimo = 0;
 
         for (int i = 0; i < (tamanho-1); i++) 
         {
@@ -88,7 +88,7 @@ void SelectionSort(int numeros[], int tamanho, int ordenacao){
         }
     }
     else{
-        int numeroMaximo, auxiliar;
+        int numeroMaximo = 0;
 
         for (int i = 0; i < (tamanho-1); i++) 
         {
