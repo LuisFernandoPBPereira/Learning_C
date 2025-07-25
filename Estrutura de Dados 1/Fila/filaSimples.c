@@ -21,13 +21,15 @@ Node *Enqueue(Node *fila, int valor) {
   return novoNode;
 }
 
-void Dequeue(Node *anterior, Node *atual) {
+Node* Dequeue(Node *atual) {
   if (atual->node != NULL) {
-    Dequeue(atual, atual->node);
+    atual->node = Dequeue(atual->node);
   } else {
-    anterior->node = NULL;
     free(atual);
+    return NULL;
   }
+
+  return atual;
 }
 
 void PrintaFila(Node *raiz) {
@@ -46,7 +48,7 @@ int main() {
   fila = Enqueue(fila, 3);
   fila = Enqueue(fila, 4);
   PrintaFila(fila);
-  Dequeue(NULL, fila);
+  fila = Dequeue(fila);
   printf("\n");
   PrintaFila(fila);
 }

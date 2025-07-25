@@ -33,24 +33,22 @@ Node* InserirNoComeco(Node* lista, int valor){
   return novoNode;
 }
 
-Node* InserirNoMeio(Node* anterior, Node* atual, int novoValor, int valoReferencia){
+void InserirNoMeio(Node* atual, int novoValor, int valoReferencia){
   Node* novoNode = malloc(sizeof(Node));
   novoNode->valor = novoValor;
 
   if (atual->valor == valoReferencia){
     if (atual->node == NULL){
       atual->node = novoNode;
-      return atual;
     }
     else{
       Node* temp = atual->node;
       atual->node = novoNode;
       novoNode->node = temp;
-      return atual;
     }
   }
   else{
-    InserirNoMeio(atual, atual->node, novoValor, valoReferencia);
+    InserirNoMeio(atual->node, novoValor, valoReferencia);
   }
 }
 
@@ -64,16 +62,22 @@ void PrintaLista(Node *raiz) {
   return;
 }
 
-void RemoverItemDaLista(Node* anterior, Node* atual, int valorParaRemover){
-  if (atual->valor == valorParaRemover){
-    if (atual->node != NULL){
-      anterior->node = atual->node;
-      free(atual);
-    }
+Node* RemoverItemDaLista(Node* atual, int valorParaRemover){
+
+  if (atual == NULL){
+    return NULL;
+  } 
+
+  if (atual->valor == valorParaRemover) {
+    Node* temp = atual->node;
+    free(atual);
+    return temp;
   }
-  else{
-    RemoverItemDaLista(atual, atual->node, valorParaRemover);
+
+  if (atual->node != NULL) {
+    atual->node = RemoverItemDaLista(atual->node, valorParaRemover);
   }
+  return atual;
 }
 
 int Length(Node* lista){
@@ -94,7 +98,7 @@ int main() {
   InserirNode(lista, 5);
   InserirNode(lista, 9);
   PrintaLista(lista);
-  RemoverItemDaLista(NULL, lista, 5);
+  RemoverItemDaLista(lista, 5);
   printf("\n");
   PrintaLista(lista);
   lista = InserirNoComeco(lista, 100);
@@ -102,10 +106,10 @@ int main() {
   PrintaLista(lista);
   printf("\nTamanho: %d\n", Length(lista));
   printf("\n");
-  InserirNoMeio(NULL, lista, 200, 2);
+  InserirNoMeio(lista, 200, 2);
   PrintaLista(lista);
   printf("\n");
-  InserirNoMeio(NULL, lista, 300, 9);
+  InserirNoMeio(lista, 300, 9);
   PrintaLista(lista);
   printf("\nTamanho: %d\n", Length(lista));
 }

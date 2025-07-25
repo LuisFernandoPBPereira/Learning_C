@@ -28,16 +28,15 @@ void Push(Node *pilha, int valor) {
   return;
 }
 
-void Pop(Node* anterior, Node *pilha) {
+Node* Pop(Node *pilha) {
   if (pilha->node != NULL) {
-    Pop(pilha, pilha->node);
+    pilha->node = Pop(pilha->node);
   } else {
-    anterior->node = NULL;
     free(pilha);
-    return;
+    return NULL;
   }
 
-  return;
+  return pilha;
 }
 
 void PrintaPilha(Node *raiz) {
@@ -56,7 +55,10 @@ int main() {
   Push(pilha, 3);
   Push(pilha, 4);
   PrintaPilha(pilha);
-  Pop(NULL, pilha);
+  Pop(pilha);
+  printf("\n");
+  PrintaPilha(pilha);
+  Push(pilha, 5);
   printf("\n");
   PrintaPilha(pilha);
 }
