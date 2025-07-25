@@ -28,7 +28,7 @@ void Push(Node *pilha, int valor) {
   return;
 }
 
-Node* Pop(Node *pilha) {
+Node *Pop(Node *pilha) {
   if (pilha->node != NULL) {
     pilha->node = Pop(pilha->node);
   } else {
@@ -40,6 +40,11 @@ Node* Pop(Node *pilha) {
 }
 
 void PrintaPilha(Node *raiz) {
+  if (raiz == NULL) {
+    printf("Pilha vazia\n");
+    return;
+  }
+
   if (raiz->node == NULL) {
     printf("%d -> TOPO\n", raiz->valor);
   } else {
@@ -51,11 +56,8 @@ void PrintaPilha(Node *raiz) {
 
 int main() {
   Node *pilha = CriarPilha(1);
-  Push(pilha, 2);
-  Push(pilha, 3);
-  Push(pilha, 4);
   PrintaPilha(pilha);
-  Pop(pilha);
+  pilha = Pop(pilha);
   printf("\n");
   PrintaPilha(pilha);
   Push(pilha, 5);

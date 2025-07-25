@@ -53,6 +53,10 @@ void InserirNoMeio(Node* atual, int novoValor, int valoReferencia){
 }
 
 void PrintaLista(Node *raiz) {
+  if (raiz == NULL){
+    printf("Lista vazia\n");
+  }
+
   printf("%d\n", raiz->valor);
 
   if (raiz->node != NULL) {
@@ -98,7 +102,7 @@ int main() {
   InserirNode(lista, 5);
   InserirNode(lista, 9);
   PrintaLista(lista);
-  RemoverItemDaLista(lista, 5);
+  lista = RemoverItemDaLista(lista, 5);
   printf("\n");
   PrintaLista(lista);
   lista = InserirNoComeco(lista, 100);

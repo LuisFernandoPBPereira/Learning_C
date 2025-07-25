@@ -33,6 +33,11 @@ Node* Dequeue(Node *atual) {
 }
 
 void PrintaFila(Node *raiz) {
+  if (raiz == NULL) {
+    printf("Fila vazia\n");
+      return;
+  }
+  
   if (raiz->node == NULL) {
     printf("%d -> COMEÇO\n", raiz->valor);
   } else {
